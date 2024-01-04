@@ -8,31 +8,30 @@
 ***
 
 <!---Skill set i used for the project--->
-<h2>
-  MADE USING
-</h2>
-<p align="center">
-<a href='https://www.espressif.com/' target="_blank"><img alt='espressif' src='https://img.shields.io/badge/Esp32-100000?style=for-the-badge&logo=espressif&logoColor=FD0000&labelColor=FFFFFF&color=black'/></a>
-<br>
-<a href='https://www.arduino.cc/' target="_blank"><img alt='Arduino' src='https://img.shields.io/badge/Arduino_ide-100000?style=for-the-badge&logo=Arduino&logoColor=008CFF&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://www.adafruit.com/' target="_blank"><img alt='Adafruit' src='https://img.shields.io/badge/Adafruit-100000?style=for-the-badge&logo=Adafruit&logoColor=000000&labelColor=FFFFFF&color=000000'/></a>
-<br>
-<a href='https://www.php.net/' target="_blank"><img alt='PHP' src='https://img.shields.io/badge/PHP-100000?style=for-the-badge&logo=PHP&logoColor=7D02FF&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://grafana.com/' target="_blank"><img alt='grafana' src='https://img.shields.io/badge/grafana-100000?style=for-the-badge&logo=grafana&logoColor=FD9800&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://grafana.com/' target="_blank"><img alt='mysql' src='https://img.shields.io/badge/Mysql-100000?style=for-the-badge&logo=mysql&logoColor=001EFF&labelColor=FFFFFF&color=000000'/></a>
-<a href='' target="_blank"><img alt='HTML' src='https://img.shields.io/badge/HTML-100000?style=for-the-badge&logo=HTML&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
-<a href='' target="_blank"><img alt='css' src='https://img.shields.io/badge/CSS-100000?style=for-the-badge&logo=css&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
-<br>
-<a href='' target="_blank"><img alt='javascript' src='https://img.shields.io/badge/Javascript-100000?style=for-the-badge&logo=javascript&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
-<a href='' target="_blank"><img alt='Node.js' src='https://img.shields.io/badge/Nodejs-100000?style=for-the-badge&logo=Node.js&logoColor=25FF08&labelColor=FFFFFF&color=000000'/></a>
-<a href='' target="_blank"><img alt='React' src='https://img.shields.io/badge/React-100000?style=for-the-badge&logo=React&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://easyeda.com/' target="_blank"><img alt='easyeda' src='https://img.shields.io/badge/easyeda-100000?style=for-the-badge&logo=easyeda&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://www.freecad.org/' target="_blank"><img alt='freecad' src='https://img.shields.io/badge/freecad-100000?style=for-the-badge&logo=freecad&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/>
-</a>
-<a href='https://www.python.org/' target="_blank"><img alt='python' src='https://img.shields.io/badge/Python-100000?style=for-the-badge&logo=python&logoColor=FDED06&labelColor=FFFFFF&color=000000'/></a>
-<a href='https://httpd.apache.org/' target="_blank"><img alt='apache' src='https://img.shields.io/badge/Apache-100000?style=for-the-badge&logo=apache&logoColor=FF0000&labelColor=FFFFFF&color=000000'/></a>
+<div style="text-align: center;">
+  <h2>MADE USING</h2>
+  <p align="center">
+    <a href='https://www.espressif.com/' target="_blank"><img alt='espressif' src='https://img.shields.io/badge/Esp32-100000?style=for-the-badge&logo=espressif&logoColor=FD0000&labelColor=FFFFFF&color=black'/></a>
+    <br>
+    <a href='https://www.arduino.cc/' target="_blank"><img alt='Arduino' src='https://img.shields.io/badge/Arduino_ide-100000?style=for-the-badge&logo=Arduino&logoColor=008CFF&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://www.adafruit.com/' target="_blank"><img alt='Adafruit' src='https://img.shields.io/badge/Adafruit-100000?style=for-the-badge&logo=Adafruit&logoColor=000000&labelColor=FFFFFF&color=000000'/></a>
+    <br>
+    <a href='https://www.php.net/' target="_blank"><img alt='PHP' src='https://img.shields.io/badge/PHP-100000?style=for-the-badge&logo=PHP&logoColor=7D02FF&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://grafana.com/' target="_blank"><img alt='grafana' src='https://img.shields.io/badge/grafana-100000?style=for-the-badge&logo=grafana&logoColor=FD9800&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://grafana.com/' target="_blank"><img alt='mysql' src='https://img.shields.io/badge/Mysql-100000?style=for-the-badge&logo=mysql&logoColor=001EFF&labelColor=FFFFFF&color=000000'/></a>
+    <a href='' target="_blank"><img alt='HTML' src='https://img.shields.io/badge/HTML-100000?style=for-the-badge&logo=HTML&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
+    <a href='' target="_blank"><img alt='css' src='https://img.shields.io/badge/CSS-100000?style=for-the-badge&logo=css&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
+    <br>
+    <a href='' target="_blank"><img alt='javascript' src='https://img.shields.io/badge/Javascript-100000?style=for-the-badge&logo=javascript&logoColor=FFFF00&labelColor=FFFFFF&color=000000'/></a>
+    <a href='' target="_blank"><img alt='Node.js' src='https://img.shields.io/badge/Nodejs-100000?style=for-the-badge&logo=Node.js&logoColor=25FF08&labelColor=FFFFFF&color=000000'/></a>
+    <a href='' target="_blank"><img alt='React' src='https://img.shields.io/badge/React-100000?style=for-the-badge&logo=React&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://easyeda.com/' target="_blank"><img alt='easyeda' src='https://img.shields.io/badge/easyeda-100000?style=for-the-badge&logo=easyeda&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://www.freecad.org/' target="_blank"><img alt='freecad' src='https://img.shields.io/badge/freecad-100000?style=for-the-badge&logo=freecad&logoColor=03D1ED&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://www.python.org/' target="_blank"><img alt='python' src='https://img.shields.io/badge/Python-100000?style=for-the-badge&logo=python&logoColor=FDED06&labelColor=FFFFFF&color=000000'/></a>
+    <a href='https://httpd.apache.org/' target="_blank"><img alt='apache' src='https://img.shields.io/badge/Apache-100000?style=for-the-badge&logo=apache&logoColor=FF0000&labelColor=FFFFFF&color=000000'/></a>
+  </p>
+</div>
 
-***
 
 <!---server setup section--->
 <h2>SETTING UP YOUR SERVER:</h3>

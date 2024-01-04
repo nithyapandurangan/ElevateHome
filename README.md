@@ -9,7 +9,7 @@
 
 <!---Skill set i used for the project--->
 <h2>
-  Made using,
+  MADE USING
 </h2>
 <p align="center">
 <a href='https://www.espressif.com/' target="_blank"><img alt='espressif' src='https://img.shields.io/badge/Esp32-100000?style=for-the-badge&logo=espressif&logoColor=FD0000&labelColor=FFFFFF&color=black'/></a>
@@ -36,7 +36,7 @@
 
 <!---server setup section--->
 <h2>SETTING UP YOUR SERVER:</h3>
-If you are using a linux debian based operating system like ubuntu then simply paste the following commands on your terminal and run them<br>
+If you are using a Linux Debian-based operating system like Ubuntu then simply paste the following commands on your terminal and run them<br>
 <a href='https://www.apachefriends.org/' target="_blank"><img alt='xampp' src='https://img.shields.io/badge/Use_ xampp  for-100000?style=for-the-badge&logo=xampp&logoColor=FD4704&labelColor=black&color=black'/></a><a href='https://www.microsoft.com/en-us/windows' target="_blank"><img alt='windows' src='https://img.shields.io/badge/windows_os-100000?style=for-the-badge&logo=windows&logoColor=02B4FF&labelColor=black&color=black'/></a>
 <h4>
   WEBSERVER SETUP:
@@ -53,8 +53,8 @@ PROJECT MADE ON <a href='https://ubuntu.com/' target="_blank"><img alt='ubuntu' 
 </h6>
 
 ```bash
-#open a location you can easily acess on your file structure
-cd /path to your loaction
+#open a location you can easily access on your file structure
+cd /path to your location
 #create a project directory at that location
 mkdir project
 #open the folder
@@ -65,11 +65,11 @@ mkdir server
 cd server
 #create a php file for the server
 gedit index.php
-#paste the server php code form the project repo in this file and save the file
+#paste the server php code from the project repo in this file and save the file
 ```
 
 <h6>
-  PORT NUMBERS AND FIREWALL FOR REFERNCE:
+  PORT NUMBERS AND FIREWALL FOR REFERENCE:
 </h6>
 
 ```bash
@@ -77,9 +77,9 @@ gedit index.php
 #mysql:3306
 #php:8000(not fixed but i use this)
 #grafana:3000
-#To see if firewall is running
+#To see if the firewall is running
 sudo ufw status
-#Allow port that you are using for php webserver in my case i am using 8000
+#Allow the port that you are using for php webserver in my case we are using 8000
 sudo ufw allow 8000
 ```
 
@@ -94,7 +94,7 @@ sudo apt update
 sudo apt install apache2
 #start apache
 sudo service apache2 start
-#enable apache to start at boot
+# Enable Apache to start at boot
 sudo systemctl enable apache2
 #check if it is up and running
 sudo systemctl status apache2
@@ -109,7 +109,7 @@ sudo systemctl status apache2
 sudo apt update
 #install php
 sudo apt install php
-#check if  installation is sucessfull
+#check if the installation is successful
 php -v
 ```
 
@@ -118,15 +118,15 @@ php -v
 </h6>
 
 ```bash
-#once you have fimished setting up the server ,to run teh php file use the following command,
+#Once you have finished setting up the server,to run the php file use the following command,
 cd /path/to/the/folder/directory/where/you/have/your/php/file/for/the/server
-#it is a good practice to create a seperate folder for your server as mentioned above
-#run this to start the server,you will see all the incomming http requests on the terminal now
+#It is ideal to create a separate folder for your server as mentioned above
+#Run this to start the server, you will see all the incoming HTTP requests on the terminal now
 php -S 0.0.0.0:8000
 ```
 
 <P>
-  Now after you setup you server and it is running properly,<a href='https://github.com/Bhargav-U/ElevateHome/blob/main/test_code' target="_blank"><img alt='python' src='https://img.shields.io/badge/use_test code-100000?style=plastic&logo=python&logoColor=white&labelColor=black&color=black'/></a>  file and run the main.py to test and understand the format in which data is being sent processes,how server is responding etc.Doing this will help you understand the esp code easily.Note that the code dosent include error handling so if you try to connect to server when it is offline you will face errors.
+  Now after you setup your server and it is running properly,<a href='https://github.com/Bhargav-U/ElevateHome/blob/main/test_code' target="_blank"><img alt='python' src='https://img.shields.io/badge/use_test code-100000?style=plastic&logo=python&logoColor=white&labelColor=black&color=black'/></a>  file and run the main.py to test and understand the format in which data is being sent processes, how server is responding etc. Doing this will help you understand the ESP code easily. Note that the code doesn't include error handling so if you try to connect to the server when it is offline you will face errors.
 </P>
 
 
@@ -134,16 +134,16 @@ MYSQL:
 
 </h6>
 <P>
-  if you are using a remote database then no need to do the mysql setup,simply chnage the credentials in the php code so that server connects to your database
+  if you are using a remote database then no need to do the MySQL setup,simply change the credentials in the php code so that the server connects to your database
 </P>
 
 ```bash
 #update the system
 sudo apt update
-#install mysql server and client
+#install MySQL server and client
 sudo apt install mysql-server
 sudo apt install mysql-client
-#start mysql
+#start MySQL
 sudo systemctl start mysql
 #enable it at boot
 sudo systemctl enable mysql
@@ -151,14 +151,14 @@ sudo systemctl enable mysql
 sudo systemctl status mysql
 #setup mysql installation
 sudo mysql_secure_installation
-#open mysql and check if setup is sucessfull
+#open MySQL and check if the setup is successful
 sudo mysql -u root -p
-#install the php mysql extension ,if not installed
+#install the php mysql extension,if not installed
 sudo apt install php-mysql
 ```
 
 <P>
-  Run the below queries on the your mysql
+  Run the below queries on your MySQL
 </P>
 
 ```sql
@@ -260,7 +260,7 @@ VALUES
   GRAFANA:
 <h6>
 <P>
-  Refer too grafana website to see how to install and configure it on your system
+  Refer to the Grafana website to see how to install and configure it on your system
 </P>
 
 ***
@@ -268,9 +268,9 @@ VALUES
 <!---esp setup section--->
 <h2>SETTING UP YOUR ESP:</h3>
 <p>
--You can use a esp32 devlopment board,jumper wires,relay module(4 relays),switches,wires to handle ac current to make youself a circuit based on the generic circuit i have attached below<br>
--You can use my gerber file named "Elevatehomegerber" to order your own pcb and make a custom designed project which doesnt have the tiring work of wiring etc,simply get the pcb,buy the components,solder them onto teh pcb and you are reday to go.<br>
--You can also use the stl file to print a simple enclosure for the project by using the stl file named "Case".<br>
+-You can use an esp32 development board, jumper wires, relay module(4 relays), switches, and wires to handle ac current to make yourself a circuit based on the generic circuit I have attached below<br>
+-You can use the Gerber file given named "Elevatehomegerber" to order your own PCB and make a custom-designed project which doesn't have the tiring work of wiring etc, simply get the PCB, buy the components, solder them onto the PCB and you are ready to go.<br>
+-You can also use the STL file to print a simple enclosure for the project by using the STL file named "Case".<br>
 -After you are done making your hardware setup follow the instructions below to program your esp.<br>
 -Refer to the <a href='https://github.com/Bhargav-U/ElevateHome/blob/main/WiringSetupManual.pdf' target="_blank"><img alt='linux' src='https://img.shields.io/badge/SETUP_MANUAL-100000?style=for-the-badge&logo=linux&logoColor=00E2FF&labelColor=black&color=black'/></a> for more instructions on genral setup and wiring.
 </p>
@@ -294,19 +294,19 @@ VALUES
 
 <!---instruction for uploading code on esp--->
 <h2>PROGRAMMING THE PROJECT:</h2
-The below instructions are for programming your project using arduino ide.<br>
-Note:Mkae sure that esp32 boards is insatlled on your ide<br>
+The below instructions are for programming your project using Arduino IDE.<br>
+Note: Make sure that the esp32 board is installed on your ide<br>
 <p>
--It dosent matter if you made your own circuit or used the custom pcb your project will have a boot and a reset pin<br>
--To upload the code you need to make sure that you esp is in boot mode<br>
--Power on your esp and connect it to your laptop either using a ftdi or a usb cable<br>
+-It doesn't matter if you made your circuit or used the custom PCB your project will have a boot and a reset pin<br>
+-To upload the code you need to make sure that your esp is in boot mode<br>
+-Power on your ESP and connect it to your laptop either using a FTDI or a USB cable<br>
 	
 
 -Go to the boards section and select esp32doitdevkit(depends on what you are using but in my case i used this)<br>
--Select the port to which the esp is connected and on serial monitor set teh baud rate to 115200<br>
--No look at the serial monitor,press and hold the boot button,now keep holding teh boot button and press and release the reset button you will see a messge saying "waiting for download",now relase the boot button and click on the uplaod button on the ide<br>
--Once code is uploaded click the reset button<br>
--In the below explanation section i have explained which code to upload and changes you need to do<br>
+-Select the port to which the ESP is connected and on the serial monitor set the baud rate to 115200<br>
+-No look at the serial monitor, press and hold the boot button, now keep holding the boot button and press and release the reset button you will see a message saying "waiting for download", now release the boot button and click on the upload button on the ide<br>
+-Once the code is uploaded click the reset button<br>
+-In the below explanation section I have explained which code to upload and the changes you need to do<br>
 </p>
 
 
@@ -321,7 +321,8 @@ Note:Mkae sure that esp32 boards is insatlled on your ide<br>
 ```
 
 <p>
-    Find this line in the save_wifi_factory.ino code and modify the ssid and passowrd.After you do that upload the code and hit reset now you should see that your ssid and passowrd are written into eeprom.If you are using a local server then make sure you put the wifi credentials of the local network.If you are using a remote server you can put any random values here.Make sure to note down what ever credentials you put here.Once the uploading of the code is done ,if you are your local environemnt you can proceed to uplad the main code and start your work.If you are using a remote server then make sure that what ever ssid and passowrd you saved into the esp are vaild,if not disconnect power to the esp,open your dashboard,make sure dashboard is connected to your server,go to the settings page,in the wifi settings add your wifi ssid and password and save them.once that is done now open you mobile hotspot aand change the name and password to match teh ssid and password in the eeprom,now turn you mobile hotspot and power on your esp.Now after few seconds you esp will connect to the mobile hotspot ,then to the server and fetch the saved credentials and automatically update the inbuilt ssid and password and will connect to the specified wifi network.
+    Find this line in the save_wifi_factory.ino code and modify the SSID and password. After that, upload the code and hit reset now you should see that your SSID and password are written into EEPROM. If you are using a local server then make sure you put the wifi credentials of the local network. If you are using a remote server you can put any random values here. Make sure to note down whatever credentials you put here. Once the uploading of the code is done, if you are in your local environment you can proceed to upload the main code and start your work. 
+	If you are using a remote server then make sure that whatever ssid and password you saved into the esp are valid, if not disconnect power to the esp, open your dashboard, make sure the dashboard is connected to your server, go to the settings page, in the wifi settings add your wifi ssid and password and save them. Once that is done open your mobile hotspot and change the name and password to match the ssid and password in the EEPROM, now turn your mobile hotspot and power on your esp. After a few seconds you esp will connect to the mobile hotspot, then to the server and fetch the saved credentials and automatically update the inbuilt ssid and password and will connect to the specified wifi network.
 </p>
 
 <h2>ESP32 CODE EXPLAINED:</h3>
@@ -386,7 +387,9 @@ String relayStates = "0000"; // Relay control states
 ```
 
 <p>
-  After we include the libraries we are going to create the requied variables and constants this includes declaring the sensor pins,switch pins,relay pins, based on your circuit modify the pin numbers.next we include arrays to store the state of the devices as string which helps us to compare the pasta nd current states in  a simple and straight forward way.As usual we created a global http object that can be acessed throught the code.some boolean variables to save the states.Th saved wifi credentials are intially empty but the data in teh eeprom is written into them ,so before uploading the automation code make sure to upload the wifi_factory_setting code and write your wifi credentials.If youa re working in a local environment it is a good practice to put the wifi credentials of the network the server is connected to to,else you can use any wifi credentials.
+  After including the necessary libraries, declare the sensor pins, switch pins, and relay pins based on your circuit; then modify the PINs accordingly. Next, include arrays to store the states of the devices as strings, facilitating a simple comparison between the past and current states. As usual, create a global HTTP object accessible throughout the code. Use boolean variables to save the states. The saved Wi-Fi credentials are initially empty but will be populated with the data in the EEPROM. Therefore, before uploading the automation code, ensure you upload the 'wifi_factory_setting' code and write your Wi-Fi credentials.
+
+If you're working in a local environment, it's a good practice to input the Wi-Fi credentials of the network to which the server is connected. Otherwise, you can use any Wi-Fi credentials
 </p>
 
 ```c++
@@ -396,7 +399,8 @@ TaskHandle_t task2Handle = NULL;
 ```
 
 <p>
-  Here we created two tasks,this is basically an rtos implemnetation.The idea of having two tasks is to increase the responsiveness of the code.When the server is offline there might be a little delay in the response,as the esp firsts checks for server avilabilty and then proceeds into modifing the relay states and managing the switch states.so adding a two tasks where one handles the local logic to reading switches and other handing the server will be very efficient.
+  We've established two tasks in this implementation, essentially an RTOS setup. The purpose behind having two tasks is to enhance code responsiveness. 
+	In case the server goes offline, there might be a slight delay in the response. The ESP first checks for server availability and then proceeds to modify the relay states and manage the switch states. Incorporating two tasks, where one manages the local logic by reading switches and the other handles server-related actions, significantly improves efficiency.
 </p>
 
 ```c++
@@ -437,7 +441,7 @@ void writeWiFiCredentialsToEEPROM(const String & json) {
 ```
 
 <p>
-  These function basically write and read the eeprom to get teh saved wifi credentials and to write the new credentials
+  These functions write and read the EEPROM to get the saved wifi credentials and write the new credentials.
 </p>
 
 ```c++
@@ -460,11 +464,11 @@ bool connectToWiFi(const char * ssid,
 ```
 
 <p>
-  This function is used to connect to the wifi,it saves unessary waiting time by only trying the connection for limited tries.
+  This function is used to connect to the wifi, it saves unnecessary waiting time by only trying the connection for limited tries.
 </p>
 
 ```c++
-  //Function to create a handshake between teh device and server
+  //Function to create a handshake between the device and the server
 void sendMacHandshake() {
         uint8_t mac[6];
         WiFi.macAddress(mac);
@@ -501,7 +505,7 @@ void sendMacHandshake() {
 ```
 
 <p>
-  Once the connection is established the esp sends as mac adress handshake in which it sends its mac address to the server.The server will identify the esp based on the mac.If the esp is already saved server will return the assigned room number if not it will assign and new room number save the mac and return the new room number.This logic is responsible for the simple setup process of this project
+  Once the connection is established the ESP sends as Mac address handshake in which it sends its Mac address to the server. The server will identify the ESP based on the Mac.If the esp is already saved server will return the assigned room number if not it will assign and new room number save the Mac and return the new room number. This logic is responsible for the simple setup process of this project
 </p>
 
 ```c++
@@ -560,7 +564,9 @@ void printStatus() {
 ```
 
 <p>
-  This part of the code is used to check the status of the device and the server.Decice status referes to the esp being connected to wifi and the server status is server's availabilty.When the device is offline the esp attempts to reconnect to the wifi.The logic of the server check is very simple,the esp cheks the servers status and sets a flag in case the server is online,the next time when the server is back online esp checks for the flag ,if flag is enabled esp sends the current device state and then resets the flag.This is to ensure that any changes made manually on the esp when the server was offline are reflected properly on the server.
+ This section of the code serves to monitor both device and server statuses. 'Device status' indicates the ESP's connection to Wi-Fi, while 'server status' signifies the availability of the server.
+
+During offline periods, the ESP attempts to reconnect to the Wi-Fi network. The logic for checking the server status is straightforward: the ESP verifies the server's availability and sets a flag if it's online. The subsequent action involves the ESP checking for this flag when the server reconnects. If the flag is enabled, the ESP sends the current device state and then resets the flag. This ensures that any manual changes made on the ESP when the server was offline are accurately reflected on the server once it's back online
 </p>
 
 ```c++
@@ -629,7 +635,7 @@ void handleWiFi() {
 ```
 
 <p>
-  This code handles the wifi connection.Initially esp gets the data from the eeprom uses those credentials to connect to teh wifi,if the connection is sucessfull it asks the server for the saved ssiss and passwords in the server,it checks the ssid and  password from the server ,if it was able to connect to wifi then the new credentials are replaced in the place of old credentials and the board is reseted.so from next time the board simply uses these new credentials.This lgic is what is responsible for the easy wifi connection setup in the dashboard
+ This portion of the code manages the Wi-Fi connection. Initially, the ESP retrieves data from the EEPROM and utilizes those credentials to connect to the Wi-Fi network. Upon successful connection, it queries the server for saved SSIDs and passwords. It then crosschecks the retrieved SSID and password from the server. If the ESP manages to establish a connection using the server-provided credentials, these new credentials replace the old ones, and the board is reset. Consequently, in subsequent attempts, the board utilizes these updated credentials. This logic significantly simplifies the Wi-Fi connection setup in the dashboard.
 </p>
 
 ```c++
@@ -678,7 +684,7 @@ void getSwitchStates() {
 ```
 
 <p>
-  This will look at the past switch pin states and compare it wil the current state,incase if they dont match the past state is updated to the current state and the current state is updated to the server if server and device are online.if not just the paststate string will be updated and no dat is sent to the server.
+  This section of the code compares the previous switch pin states with the current states. If they don't match, the past state is updated to match the current state. Additionally, if both the server and device are online, the current state is also updated on the server. However, if either the server or the device is offline, only the past state string is updated, and no data is sent to the server
 </p>
 
 ```c++
@@ -714,7 +720,9 @@ void askForRelayStates() {
 ```
 
 <p>
-  This will ask the server for the current device states as saved on the database,any changes in the dashboard modify the database which inturn will be know to the esp through serever vai this function,If the response from the server is diffrent from teh current relay sates then teh relay states is updated.This function only runs when server and device are online and that logic is handled in another code section 
+  This function requests the current device states saved in the database from the server. Any modifications made in the dashboard update the database, consequently notifying the ESP through the server. If the response from the server differs from the current relay states, the relay states are updated accordingly.
+
+However, it's important to note that this function solely operates when both the server and device are online, and the logic determining this condition is handled in a separate code section
 </p>
 
 ```c++
@@ -744,7 +752,7 @@ void sendSensorDataToServer() {
 ```
 
 <p>
-  As we know that we have sensor here,readings from the sensor are updated to the server when server and device are online.
+  As we know we have a sensor here, and readings from the sensor are updated to the server when the server and device are online.
 </p>
 
 ```c++
@@ -769,7 +777,7 @@ void Manual(void * pvParameters) {
 ```
 
 <p>
-    This is the rtos implementaion of a task that handles functions like reading the changes in the switches and updatin the local states and the relay states
+    This is the RTOS implementation of a task that handles functions like reading the changes in the switches and updating the local states and the relay states
 </p>
 
 ```c++
@@ -797,7 +805,7 @@ void Connected(void * pvParameters) {
 ```
 
 <p>
-    This is the rtos iplementation of a task  that functions like,asking server for relay states,checking for status,reconnection to wifi,managinf relys,sending sensor data to server
+    This is the implementation of a task  that functions like, asking server for relay states, checking for status, reconnection to wifi, managing relies,sending sensor data to the server
 </p>
 
 ```c++
@@ -834,12 +842,14 @@ void setup() {
 
 
 void loop() {
-        //Nothing runs in loop,two independent tasks in two diffrent cores run the show
+        //Nothing runs in a loop,two independent tasks in two different cores run the show
 }
 ```
 
 <p>
-  These are the setup and the loop functions.we initate serial communication,begin sensor readings,initate the switches and relays,manage the wifi handling.After we are done handiling the wifi there is a small logic that manages the initiation of the relays.If we are online then we simply set the relay states to that in the server,if not we simply set it to the local switch state,thus maintaining the integrity.After we do that we just create two taks that handle the tasks that was mentioned above.These tasks are running on two diffrent cores so they are running indepent to each other and one failing dosent affect other one and what ever might be the case there is stability of the system.
+ In the setup and loop functions, we initiate serial communication, begin sensor readings, and initialize the switches and relays. The code then manages the Wi-Fi setup. Following this Wi-Fi handling, a small logic segment controls the initialization of the relays.
+If the system is online, the relay states are set to match those in the server. However, if the system is offline, the relay states are set to correspond with the local switch states. This maintains system integrity.
+Subsequently, two tasks are created to handle the previously mentioned functionalities. These tasks operate on separate cores, ensuring their independence from each other. This design ensures that if one task fails, it doesn't impact the other. Overall, this architecture provides stability to the system regardless of the circumstances
 </p>
 
 ***
@@ -887,7 +897,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
 ```
 <p>
-  If server receives any get request it responds by saying it is alive
+  If the server receives any get request it responds by saying it is alive
 </p>
 
 
@@ -938,7 +948,9 @@ elseif ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 ```
 <p>
-  Now incase if the request is a post request then teh server will first verify if it is a mac handshake,mac handshake is basically the esp sending its mac.Mac address is used to identify the existing esps and teh new esp.So when a new mac address is identified a new entry for that address is created and the number of that address is returned.If the address already exists then server simply retuns the number for the existing mac address,here each esp is identified as a room and each esp can control 4 applinances.the name of the esp is given from the room in which it is being used 
+ In the case of a POST request, the server initiates a verification process to determine if it's a MAC handshake. The MAC handshake involves the ESP sending its MAC (Media Access Control) address. This address serves as a means to distinguish existing ESPs from new ones. When a new MAC address is detected, the server creates a new entry for that address and returns the corresponding number associated with it.
+
+However, if the address already exists in the server's records, the server simply returns the number linked to the existing MAC address. In this setup, each ESP is identified as a room, and each room's ESP can control up to four appliances. The ESP's name is derived from the room in which it's being utilized.
 </p>
 
 
@@ -961,7 +973,7 @@ elseif ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 ```
 <p>
-  This will handle all other conditions,there is a variable called case.so The case variable will tell the server about the information that is being sent  to the server
+  This will handle all other conditions, there is a variable called case. So The case variable will tell the server about the information that is being sent to the server
 </p>
 
 
@@ -971,24 +983,29 @@ elseif ($_SERVER["REQUEST_METHOD"] === "POST") {
 </h2>
 
 <p>
-	You can control this project using a web dashboard.The files for the webdashboard has been are uploaded and you can use them ,just make sure to put the server address properly in the javascript code(You just need to change the server address based on your server address).When teh project is connected to wifi ,it iwll automatically show up in your dashboard considering that the server address is correct.Now you simply need to go to the rooms page where you will see a new room pop up.no you can configure the new room,appliance names through the room settings in the settings page.So it's just plug and play.everytime a new device tries to connect to the server it is identified through its mac address and given a room id ,so scaling up multiple nodes is easy and quick as each room has its unique adressing.<br>
+This project offers control through a web dashboard. The dashboard files have been uploaded and are available for use. Please ensure to correctly input the server address in the JavaScript code, adapting it to your specific server address. Once the project is connected to Wi-Fi, it will automatically appear on your dashboard, assuming the server address is accurately set.
+To configure, navigate to the 'Rooms' page where a new room will be visible. You can then customize the room and appliance names via the 'Room Settings' section on the settings page. It's essentially a plug-and-play setup.
+
+Every time a new device attempts to connect to the server, it is identified by its MAC address and assigned a unique room ID. This design allows for easy and rapid scalability by adding multiple nodes, each with its unique address assigned to a room<br>
 </p>
 
 <h3>
 	Configuring the project at first connection to the server:
 </h3>
-once the project is powered on it iwll automatically connect to the server and  in the rooms section of the dashbord,you will see a new room popup like the one in the image below,
+once the project is powered on it will automatically connect to the server and  in the room's section of the dashboard, you will see a new room popup like the one in the image below,
 
 ![ROOMS](https://drive.google.com/uc?id=1X1JxEKE80KOUFEJobqhScXs0WSc_upsN)
 
-you can chnage the names of the appliance and room,by simply going into the room settings in the settings section of the dashboard,here you simply need to enter the room id od the room you want to configure.The room id is the same teh position of that room in the rooms section.once you set the names ,click on save to make the changes.
+To modify the names of appliances and rooms, access the 'Room Settings' within the settings section of the dashboard. To make changes, enter the room ID of the specific room you wish to configure. The room ID corresponds to the position of that room in the rooms section.
+
+Once you've entered the appropriate room ID, you can adjust the names as desired. Click on 'Save' to ensure the changes take effect
 
 ![SETTINGS PAGE](https://drive.google.com/uc?id=16Eivd69Q9szRMPJQMQuR2iUJ8mO45xpF)
 
 
 ![ROOM SETTINGS](https://drive.google.com/uc?id=1MIZUK0lfzrg9KcmPFedoKyWSjtVnUuOm)
 
-Now after you configure your room,you can head back to the rooms section and select your room,control teh appliance using the toggle switches
+Now after you configure your room, you can head back to the rooms section and select your room, control the appliance using the toggle switches
 
 ![ROOM](https://drive.google.com/uc?id=18E0XaiUxrRXX1GMdDor9e1qpyGRVMJoC)
 
@@ -997,7 +1014,7 @@ Now after you configure your room,you can head back to the rooms section and sel
 ***
 
 <p>
-	If you are planning to make your self a pcb prototype you can refer to the componets list below,you will find the same components i used for this project,unaffliated links.These worked best for me<br>
+	If you are planning to make yourself a PCB prototype you can refer to the components list below, you will find the same components I used for this project, unaffiliated links. These worked best for me<br>
 <p align = "center">
 	<a href='https://drive.google.com/file/d/1veKbc5ochvP25u9h9z88X4OARTv1YUqS/view?usp=sharing' target="_blank"><img alt='' src='https://img.shields.io/badge/Products-100000?style=for-the-badge&logo=&logoColor=white&labelColor=black&color=FF0000'/></a>
 </p>
@@ -1005,7 +1022,7 @@ Now after you configure your room,you can head back to the rooms section and sel
 
 ***
 
-Feel free ask me your questions regarding this project and help me improve my project by providing your valuble suggestions
+Feel free to ask us any of your questions regarding this project. You can also help us improve our project by providing your valuable suggestions!
 [![Email](https://img.shields.io/badge/Email-unnambhargav%40gmail.com-black?style=flat-square&logo=gmail)](mailto:unnambhargav@gmail.com)
 
 

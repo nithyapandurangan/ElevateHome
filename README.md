@@ -7,7 +7,7 @@
 
 ***
 
-<!---Skill set i used for the project--->
+<!---Skill set I used for the project--->
 <div style="text-align: center;">
   <h2>MADE USING</h2>
   <p align="center">
@@ -35,19 +35,18 @@
 
 <!---server setup section--->
 <div style="text-align: center;">
-  <h2>SETTING UP YOUR SERVER:</h2>
-  <p align="center">
-    If you are using a Linux Debian-based operating system like Ubuntu, simply paste the following commands on your terminal and run them:
-    <br>
-    <a href='https://www.apachefriends.org/' target="_blank"><img alt='xampp' src='https://img.shields.io/badge/Use_ xampp  for-100000?style=for-the-badge&logo=xampp&logoColor=FD4704&labelColor=black&color=black'/></a>
-    <a href='https://www.microsoft.com/en-us/windows' target="_blank"><img alt='windows' src='https://img.shields.io/badge/windows_os-100000?style=for-the-badge&logo=windows&logoColor=02B4FF&labelColor=black&color=black'/></a>
-    <h4>
-      WEBSERVER SETUP:
-      <br>
-      <a href='https://www.debian.org/' target="_blank"><img alt='debian' src='https://img.shields.io/badge/setup_for debian based operating systems-100000?style=for-the-badge&logo=debian&logoColor=FF0000&labelColor=black&color=black'/></a>
-      <br>
-      PROJECT MADE ON <a href='https://ubuntu.com/' target="_blank"><img alt='ubuntu' src='https://img.shields.io/badge/Ubuntu-100000?style=for-the-badge&logo=ubuntu&logoColor=F75A00&labelColor=black&color=black'/></a>
-    </h4>
+ <h2>SETTING UP YOUR SERVER:</h3>
+If you are using a Linux Debian-based operating system like Ubuntu then simply paste the following commands on your terminal and run them<br>
+<a href='https://www.apachefriends.org/' target="_blank"><img alt='xampp' src='https://img.shields.io/badge/Use_ xampp  for-100000?style=for-the-badge&logo=xampp&logoColor=FD4704&labelColor=black&color=black'/></a><a href='https://www.microsoft.com/en-us/windows' target="_blank"><img alt='windows' src='https://img.shields.io/badge/windows_os-100000?style=for-the-badge&logo=windows&logoColor=02B4FF&labelColor=black&color=black'/></a>
+<h4>
+  WEBSERVER SETUP:
+  <br>
+<a href='https://www.debian.org/' target="_blank"><img alt='debian' src='https://img.shields.io/badge/setup_for debian based operating systems-100000?style=for-the-badge&logo=debian&logoColor=FF0000&labelColor=black&color=black'/></a>
+  <br>
+<h4> PROJECT MADE ON </h4> <a href='https://ubuntu.com/' target="_blank"><img alt='ubuntu' src='https://img.shields.io/badge/Ubuntu-100000?style=for-the-badge&logo=ubuntu&logoColor=F75A00&labelColor=black&color=black'/></a>
+<br>
+
+</h4>
   </p>
 </div>
 
